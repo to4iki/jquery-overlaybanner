@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>overlaybanner example</title>
+</head>
+<style>
+#footerLogin {
+  width: 50%; /* optionのbannerStyle.widthが優先される */
+  box-shadow: 0 0 8px rgba(0,0,0,0.4);
+  z-index: 1;
+}
+</style>
+
+<body align="center">
+  <div id="main">
+    <div id="footerLogin">
+      <div style="border: 1px solid red;" >
+        <p>please loggd in!</p>
+      </div>
+    </div>
+    <div id="content">
+      <h1>Content 1</h1>
+      <h1>Content 2</h1>
+      <h1>Content 3</h1>
+      <h1>Content 4</h1>
+      <h1>Content 5</h1>
+      <h1>Content 6</h1>
+      <h1>Content 7</h1>
+      <h1>Content 8</h1>
+      <h1>Content 9</h1>
+      <h1>Content 10</h1>
+      <h1>Content 11</h1>
+      <h1>Content 12</h1>
+      <h1>Content 13</h1>
+      <h1>Content 14</h1>
+      <h1>Content 15</h1>
+      <h1>Content 16</h1>
+      <h1>Content 17</h1>
+      <h1>Content 18</h1>
+      <h1>Content 19</h1>
+      <h1>Content 20</h1>
+      <h1>Content 21</h1>
+      <h1>Content 22</h1>
+      <h1>Content 23</h1>
+      <h1>Content 24</h1>
+      <h1>Content 25</h1>
+      <h1>Content 26</h1>
+      <h1>Content 27</h1>
+      <h1>Content 28</h1>
+      <h1>Content 29</h1>
+      <h1>Content 30</h1>
+    </div>
+  </div>
+
+  <footer>
+    footer
+  </footer>
+
+  <!-- include -->
+  <script src="../test/lib/jquery-loader.js"></script>
+  <script src="../dist/jquery-overlaybanner.min.js"></script>
+  <!-- execute -->
+  <script>
+    $(function() {
+      $('#footerLogin').overlayBanner({
+        'togglePosition': $('footer'),
+        'toggleSpeed': 'fast',
+        'sessionValid': true,
+        'bannerStyle': {
+          'height': '155px',
+          'width': '100%',
+          'backgroundColor': '#FFF'
+        }
+      });
+    })
+  </script>
+</body>
+</html>
