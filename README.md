@@ -30,6 +30,7 @@ Where in the HTML it is may be written because it is absolutely positioned.
 $('.footerBanner').overlayBanner({
   'togglePosition': $('footer'),
   'toggleSpeed': 'fast',
+  'sessionValid': true,
   'bannerStyle': {
     'height': '155px',
     'width': '100%',
@@ -39,4 +40,5 @@ $('.footerBanner').overlayBanner({
 ```
 
 ## Release History
-- ver 0.1.0
+- ver 0.1.0 first commit
+- ver 0.1.1 Display controlled by the value of the session
